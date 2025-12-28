@@ -12,12 +12,15 @@
       name: 'Kailios Wiki',
       repo: '',
       loadSidebar: true, // Bật thanh bên (menu)
-      homepage: 'README.md'
+      homepage: 'README.md',
       subMaxLevel: 2,
-      search: 'auto', // Bật tính năng tìm kiếm
-      latex: {
-        inlineContent: [['$', '$'], ['\\(', '\\)']],
-        displayContent: [['$$', '$$'], ['\\[', '\\]']],
+    
+      search:{
+      maxAge: 86400000, 
+      paths: 'auto',
+      placeholder: 'Tìm tài liệu...',
+      noData: 'Không thấy kết quả!',
+      depth: 6
       }
     }
   </script>
@@ -27,3 +30,6 @@
   <script src="//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </body>
 </html>
+
+
+//tìm kiếmm
