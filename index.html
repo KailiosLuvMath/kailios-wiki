@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Kailios - Kho Tài Liệu</title>
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/vue.css">
+</head>
+<body>
+  <div id="app">Đang tải tài liệu của Kailios...</div>
+  <script>
+    window.$docsify = {
+      name: 'Kailios Wiki',
+      repo: '',
+      loadSidebar: true, // Bật thanh bên (menu)
+      homepage: 'README.md'
+      subMaxLevel: 2,
+      search: 'auto', // Bật tính năng tìm kiếm
+      latex: {
+        inlineContent: [['$', '$'], ['\\(', '\\)']],
+        displayContent: [['$$', '$$'], ['\\[', '\\]']],
+      }
+    }
+  </script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify-latex@0"></script>
+  <script src="//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</body>
+</html>
